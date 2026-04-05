@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)\")",
+      "Bash(ls \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/src\")",
+      "Bash(find \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/src\" -type f)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/node_modules/.bin/vite\"*)",
+      "Bash(ls 'C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/node_modules')",
+      "Bash(npm install:*)",
+      "Bash(ls \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/public/\")",
+      "Bash(ls \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/public/videos/\")",
+      "Bash(stat 'C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/public/videos/IMG_7743.MP4')",
+      "Bash(pandoc \"C:/Users/Ksenia/Desktop/privacy_policy.docx\" -o /tmp/privacy_policy.md)",
+      "Bash(python \"C:/Users/Ksenia/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/41e6687a-a969-4e23-9854-10d68b82ed3f/4dfa067a-46e2-44c1-9699-731d24b40ce6/skills/docx/scripts/office/unpack.py\" \"C:/Users/Ksenia/Desktop/privacy_policy.docx\" /tmp/privacy_unpacked/)",
+      "Bash(python3 \"C:/Users/Ksenia/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/41e6687a-a969-4e23-9854-10d68b82ed3f/4dfa067a-46e2-44c1-9699-731d24b40ce6/skills/docx/scripts/office/unpack.py\" \"C:/Users/Ksenia/Desktop/privacy_policy.docx\" /tmp/privacy_unpacked/)",
+      "Bash(py --version)",
+      "Bash(cd /tmp)",
+      "Bash(mkdir -p privacy_unpacked)",
+      "Bash(node -e \":*)",
+      "Bash(find \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)\" -type f -name \"*.tsx\" -o -name \"*.ts\" -o -name \"robots.txt\" -o -name \"sitemap.xml\" -o -name \"index.html\")",
+      "Bash(ls -la 'C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/public/')",
+      "Bash(grep -n \"<img\" \"C:/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/src/pages/\"*.tsx)",
+      "Bash(ls -la \"/c/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/public/\")",
+      "Bash(find \"/c/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)\" -maxdepth 2 -name \"robots.txt\" -o -name \"sitemap.xml\")",
+      "Bash(head -20 \"/c/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/index.html\")",
+      "Bash(cat \"/c/Users/Ksenia/Desktop/royal-event-group---delegations \\(1\\)/src/App.tsx\")",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "Bash(ls \"C:\\\\Users\\\\Ksenia\\\\Desktop\\\\royal-event-group---delegations \\(1\\)\\\\public\\\\partners\"\")",
+      "Bash(npx vite:*)",
+      "Bash(npx vitest:*)",
+      "Bash(npx playwright:*)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(npx tsx -e \":*)",
+      "Bash(npm run:*)",
+      "Bash(du -sh public/*)"
+    ]
+  }
+}
