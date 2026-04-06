@@ -111,7 +111,7 @@ const Home = () => {
       />
       
       {/* Hero Section */}
-      <section ref={heroRef} className="relative h-screen flex items-end md:items-center pb-16 md:pb-0 px-6 overflow-hidden">
+      <section ref={heroRef} className="relative h-screen flex items-center px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <motion.div style={{ y: heroY, opacity: heroOpacity }} className="w-full h-full">
             <motion.img 
@@ -137,7 +137,7 @@ const Home = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="inline-block px-5 py-2 rounded-full bg-white/5 border border-white/10 text-royal-pink text-[10px] font-bold uppercase tracking-[0.4em] mb-6 md:mb-10"
+              className="hidden md:inline-block px-5 py-2 rounded-full bg-white/5 border border-white/10 text-royal-pink text-[10px] font-bold uppercase tracking-[0.4em] mb-10"
             >
               {t.hero.tag}
             </motion.span>
