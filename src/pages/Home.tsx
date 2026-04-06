@@ -141,7 +141,7 @@ const Home = () => {
             >
               {t.hero.tag}
             </motion.span>
-            <h1 className="text-[2rem] sm:text-6xl md:text-[6rem] font-display font-black leading-[0.85] tracking-tighter mb-10 uppercase">
+            <h1 className="text-[1.5rem] sm:text-6xl md:text-[6rem] font-display font-black leading-[0.85] tracking-tighter mb-10 uppercase">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
