@@ -35,7 +35,7 @@ const SectionHeader = ({ title, subtitle }: { title: string, subtitle?: string }
     <motion.h2 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="text-3xl sm:text-4xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none break-words"
+      className="text-2xl sm:text-4xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none"
     >
       {title}
     </motion.h2>
@@ -111,7 +111,7 @@ const Home = () => {
       />
       
       {/* Hero Section */}
-      <section ref={heroRef} className="relative h-screen flex items-center px-6 overflow-hidden">
+      <section ref={heroRef} className="relative min-h-screen flex items-center pt-28 md:pt-0 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <motion.div style={{ y: heroY, opacity: heroOpacity }} className="w-full h-full">
             <motion.img 
@@ -141,7 +141,7 @@ const Home = () => {
             >
               {t.hero.tag}
             </motion.span>
-            <h1 className="text-4xl sm:text-6xl md:text-[6rem] font-display font-black leading-[0.85] tracking-tighter mb-10 uppercase break-words">
+            <h1 className="text-[2rem] sm:text-6xl md:text-[6rem] font-display font-black leading-[0.85] tracking-tighter mb-10 uppercase">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ const Home = () => {
               <span className="text-royal-pink font-bold text-xs uppercase tracking-[0.4em] mb-4 block">
                 {t.nav.services}
               </span>
-              <h2 className="text-3xl sm:text-5xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none break-words text-left">
+              <h2 className="text-2xl sm:text-5xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none text-left">
                 {t.servicesOverview.title} <br /> {t.servicesOverview.titleAccent}
               </h2>
             </motion.div>
@@ -290,7 +290,7 @@ const Home = () => {
                       <div className="w-12 h-12 rounded-2xl bg-royal-pink/10 flex items-center justify-center mb-6 group-hover:bg-royal-pink group-hover:text-royal-black transition-all">
                         <Icon className="w-6 h-6" />
                       </div>
-                      <h4 className="text-xl font-display font-bold mb-3 uppercase tracking-tight break-words">{item.title}</h4>
+                      <h4 className="text-xl font-display font-bold mb-3 uppercase tracking-tight">{item.title}</h4>
                       <p className="text-sm text-white/40 leading-relaxed">{item.desc}</p>
                     </motion.div>
                   );
@@ -551,7 +551,7 @@ const Home = () => {
                   <div className="aspect-[3/4] rounded-[40px] overflow-hidden mb-8 border border-white/10">
                     <img src={ceo.image} alt={ceo.name} className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
                   </div>
-                  <h4 className="text-xl md:text-2xl font-display font-bold uppercase tracking-tight mb-2 break-words">{ceo.name}</h4>
+                  <h4 className="text-xl md:text-2xl font-display font-bold uppercase tracking-tight mb-2">{ceo.name}</h4>
                   <p className="text-royal-pink font-bold text-xs uppercase tracking-widest">{ceo.role}</p>
                 </motion.div>
               ))}
@@ -942,7 +942,7 @@ const Home = () => {
                       <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
                     <div>
-                      <h4 className="text-lg sm:text-2xl font-display font-bold mb-3 uppercase tracking-tight break-words hyphens-auto">{item.title}</h4>
+                      <h4 className="text-lg sm:text-2xl font-display font-bold mb-3 uppercase tracking-tight hyphens-none">{item.title}</h4>
                       <p className="text-white/40 leading-relaxed max-w-md text-sm sm:text-base">{item.desc}</p>
                     </div>
                   </motion.div>
@@ -970,7 +970,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-5xl md:text-8xl font-display font-black uppercase tracking-tighter leading-none mb-8 break-words"
+            className="text-3xl sm:text-5xl md:text-8xl font-display font-black uppercase tracking-tighter leading-none mb-8"
           >
             {t.ctaSection.title}
           </motion.h2>
