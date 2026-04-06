@@ -684,11 +684,11 @@ const Home = () => {
                   </p>
                   
                   {card.partners && (
-                    <div className="flex items-start gap-3 pt-6 border-t border-white/10">
+                    <div className={`flex items-start gap-3 pt-6 border-t ${i === 1 ? 'border-white/10' : 'border-royal-black/10'}`}>
                       <div className="w-5 h-5 rounded-full border border-royal-pink flex items-center justify-center shrink-0 mt-0.5">
                         <CheckCircle2 className="w-3 h-3 text-royal-pink" />
                       </div>
-                      <p className="text-[10px] uppercase tracking-widest font-bold text-white/40">
+                      <p className={`text-[10px] uppercase tracking-widest font-bold ${i === 1 ? 'text-white/40' : 'text-royal-black/50'}`}>
                         {card.partners}
                       </p>
                     </div>

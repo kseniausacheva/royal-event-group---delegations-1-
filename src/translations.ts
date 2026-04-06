@@ -343,13 +343,13 @@ export const translations = {
         {
           number: "2",
           title: "Своё производство",
-          desc: "Собственные цеха, своё оборудование, прямые контракты с отелями. Вы работаете напрямую.",
-          partners: "Four Seasons, Kempinski, Domina"
+          desc: "Собственные цеха, своё оборудование, прямые контракты с отелями. Вы работаете напрямую."
         },
         {
           number: "3",
           title: "Без границ",
-          desc: "Любые площадки, концепции, бюджеты. От камерного ужина на 20 человек в пустыне до конференции на 1000+ гостей."
+          desc: "Любые площадки, концепции, бюджеты. От камерного ужина на 20 человек в пустыне до конференции на 1000+ гостей.",
+          partners: "Four Seasons, Kempinski, Domina"
         }
       ],
       footer: "Никаких лимитов. Во всём."
@@ -799,13 +799,13 @@ export const translations = {
         {
           number: "2",
           title: "no intermediaries",
-          desc: "Own production, own equipment, direct contracts with hotels. You work directly",
-          partners: "Direct partners of Four Seasons, Kempinski, Domina"
+          desc: "Own production, own equipment, direct contracts with hotels. You work directly"
         },
         {
           number: "3",
           title: "no limits",
-          desc: "Any venues, concepts, budgets. From an intimate dinner for 20 people in the desert to a conference for 1000+ guests"
+          desc: "Any venues, concepts, budgets. From an intimate dinner for 20 people in the desert to a conference for 1000+ guests",
+          partners: "Direct partners of Four Seasons, Kempinski, Domina"
         }
       ],
       footer: "No limits. In everything."
