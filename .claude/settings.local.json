@@ -34,7 +34,10 @@
       "Bash(taskkill //F //IM node.exe)",
       "Bash(npx tsx -e \":*)",
       "Bash(npm run:*)",
-      "Bash(du -sh public/*)"
+      "Bash(du -sh public/*)",
+      "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_projects",
+      "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_teams",
+      "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_deployments"
     ]
   }
 }
