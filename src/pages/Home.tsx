@@ -200,7 +200,7 @@ const Home = () => {
       {/* Services Overview */}
       <section className="py-40 px-6 bg-royal-black">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ const Home = () => {
               <span className="text-royal-pink font-bold text-xs uppercase tracking-[0.4em] mb-4 block">
                 {t.nav.services}
               </span>
-              <h2 className="text-3xl sm:text-5xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none break-words">
+              <h2 className="text-3xl sm:text-5xl md:text-7xl font-display font-black uppercase tracking-tighter leading-none break-words text-left">
                 {t.servicesOverview.title} <br /> {t.servicesOverview.titleAccent}
               </h2>
             </motion.div>
