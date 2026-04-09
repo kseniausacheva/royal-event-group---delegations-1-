@@ -38,7 +38,8 @@
       "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_projects",
       "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_teams",
       "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__list_deployments",
-      "Bash(find 'C:\\\\Users\\\\Ksenia\\\\Desktop\\\\royal-event-group---delegations \\(1\\)' -type f \\\\\\(-name *.json -o -name *.ts -o -name *.tsx -o -name *.js \\\\\\))"
+      "Bash(find 'C:\\\\Users\\\\Ksenia\\\\Desktop\\\\royal-event-group---delegations \\(1\\)' -type f \\\\\\(-name *.json -o -name *.ts -o -name *.tsx -o -name *.js \\\\\\))",
+      "mcp__e2e6b0a1-d1a4-4a53-ac65-b55d3c4421fb__get_deployment_build_logs"
     ]
   }
 }
