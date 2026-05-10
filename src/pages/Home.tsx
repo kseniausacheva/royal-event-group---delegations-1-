@@ -175,9 +175,9 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <a href="#directions" className="group px-12 py-6 bg-royal-pink text-royal-black font-display font-bold rounded-full flex items-center gap-4 shadow-2xl shadow-royal-pink/20 transition-all whitespace-nowrap">
+                <Link to={lp('/contact')} className="group px-12 py-6 bg-royal-pink text-royal-black font-display font-bold rounded-full flex items-center gap-4 shadow-2xl shadow-royal-pink/20 transition-all whitespace-nowrap">
                   {t.hero.cta} <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                </a>
+                </Link>
               </motion.div>
             </div>
             <motion.div
