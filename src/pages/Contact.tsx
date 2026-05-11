@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
-import { Mail, Phone, MapPin, Instagram, Send, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin, Send, MessageCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 
 import ContactForm from '../components/ContactForm';
@@ -108,7 +108,7 @@ const Contact = () => {
 
             <div className="flex gap-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/royalevent_mice_egypt"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -117,7 +117,16 @@ const Contact = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://t.me/+79261233328"
+                href="https://www.linkedin.com/in/ksenia-usacheva-b5a7b23b5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-royal-pink hover:text-royal-pink transition-all"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/kseniamerry"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Telegram"
@@ -126,7 +135,7 @@ const Contact = () => {
                 <Send className="w-5 h-5" />
               </a>
               <a
-                href="https://max.ru"
+                href="https://max.ru/u/f9LHodD0cOI6NopEpkHgITsu_AIEFyrbBPaFkURFR2kn3i3inUUuT4dKLgQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Max"
