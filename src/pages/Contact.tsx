@@ -75,14 +75,6 @@ const Contact = () => {
                       <p className="text-white/40 text-lg">+20 110 100 5061</p>
                       <div className="flex gap-4 mt-1">
                         <a
-                          href="https://wa.me/201101005061"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
-                        >
-                          WhatsApp
-                        </a>
-                        <a
                           href="https://t.me/+201101005061"
                           target="_blank"
                           rel="noopener noreferrer"
