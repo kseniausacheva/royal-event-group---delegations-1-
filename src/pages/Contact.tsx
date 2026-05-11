@@ -40,7 +40,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-display font-bold uppercase mb-2">{t.contactPage.labels.email}</h4>
-                  <p className="text-white/40 text-lg">info@royalevent.group</p>
+                  <p className="text-white/40 text-lg">baxgat@yandex.ru</p>
                 </div>
               </div>
               <div className="flex items-start gap-8">
