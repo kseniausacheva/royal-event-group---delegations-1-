@@ -12,6 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { useLanguage } from '../LanguageContext';
+import { useLocalizedPath } from '../hooks/useLocalizedPath';
 
 interface ServiceItemProps {
   icon: any;
@@ -40,6 +41,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ icon: Icon, title, descriptio
 
 const Delegations = () => {
   const { t } = useLanguage();
+  const lp = useLocalizedPath();
   const icons = [Languages, ShieldCheck, Globe, Star];
 
   return (
@@ -151,21 +153,21 @@ const Delegations = () => {
                 {t.delegationsPage.cta.desc}
               </p>
               
-              <a 
-                href="mailto:info@royalevent.com"
+              <Link
+                to={lp('/contact')}
                 className="flex items-center justify-between w-full p-6 bg-royal-black text-white rounded-2xl font-display font-bold hover:scale-[1.02] transition-transform group"
               >
                 {t.delegationsPage.cta.button}
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              
+              </Link>
+
               <div className="mt-8 pt-8 border-t border-royal-black/10 flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-royal-black/10 flex items-center justify-center">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-widest opacity-60">Email</p>
-                  <p className="font-bold">info@royalevent.com</p>
+                  <p className="font-bold">baxgat@yandex.ru</p>
                 </div>
               </div>
             </div>
