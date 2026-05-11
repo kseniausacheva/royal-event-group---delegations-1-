@@ -54,12 +54,12 @@ const Contact = () => {
                       <p className="text-white/40 text-lg">+7 926 123 33 28</p>
                       <div className="flex gap-4 mt-1 flex-wrap">
                         <a
-                          href="https://wa.me/79261233328"
+                          href="https://max.ru/+79261233328"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
                         >
-                          WhatsApp
+                          Max
                         </a>
                         <a
                           href="https://t.me/+79261233328"
@@ -70,12 +70,12 @@ const Contact = () => {
                           Telegram
                         </a>
                         <a
-                          href="https://max.ru/+79261233328"
+                          href="https://wa.me/79261233328"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
                         >
-                          Max
+                          WhatsApp
                         </a>
                       </div>
                     </div>
