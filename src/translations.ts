@@ -323,6 +323,8 @@ export const translations = {
         location: 'Локация',
         name: 'Полное имя',
         emailAddr: 'Электронная почта',
+        phoneNumber: 'Номер телефона',
+        messenger: 'Мессенджер для связи',
         message: 'Сообщение',
         submit: 'Отправить запрос'
       },
@@ -779,6 +781,8 @@ export const translations = {
         location: 'Location',
         name: 'Full Name',
         emailAddr: 'Email Address',
+        phoneNumber: 'Phone Number',
+        messenger: 'Preferred Messenger',
         message: 'Message',
         submit: 'Submit Request'
       },

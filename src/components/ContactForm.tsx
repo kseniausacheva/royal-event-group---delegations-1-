@@ -9,7 +9,7 @@ const ContactForm = () => {
   const { t, language } = useLanguage();
   const lp = useLocalizedPath();
 
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', messenger: '', message: '' });
   const [mailingConsent, setMailingConsent] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
@@ -30,7 +30,7 @@ const ContactForm = () => {
 
       if (res.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', messenger: '', message: '' });
         setMailingConsent(false);
       } else {
         setStatus('error');
@@ -99,6 +99,32 @@ const ContactForm = () => {
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
             className="w-full bg-transparent border-b border-white/10 py-4 focus:border-royal-pink outline-none transition-all"
           />
+        </div>
+        <div className="space-y-2">
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.phoneNumber}</label>
+          <input
+            type="tel"
+            required
+            value={formData.phone}
+            onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+            className="w-full bg-transparent border-b border-white/10 py-4 focus:border-royal-pink outline-none transition-all"
+            placeholder={language === 'ru' ? '+7 (___) ___-__-__' : '+1 (___) ___-____'}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.messenger}</label>
+          <select
+            required
+            value={formData.messenger}
+            onChange={(e) => setFormData(prev => ({ ...prev, messenger: e.target.value }))}
+            className="w-full bg-transparent border-b border-white/10 py-4 focus:border-royal-pink outline-none transition-all text-white [&>option]:bg-royal-black [&>option]:text-white"
+          >
+            <option value="" disabled>{language === 'ru' ? 'Выберите мессенджер' : 'Select messenger'}</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Telegram">Telegram</option>
+            <option value="VK">VK</option>
+            <option value="Email">{language === 'ru' ? 'Электронная почта' : 'Email'}</option>
+          </select>
         </div>
         <div className="space-y-2">
           <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.message}</label>

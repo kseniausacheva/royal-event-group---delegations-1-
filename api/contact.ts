@@ -13,9 +13,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, message, mailingConsent } = req.body || {};
+  const { name, email, phone, messenger, message, mailingConsent } = req.body || {};
 
-  if (!name || !email || !message) {
+  if (!name || !email || !phone || !messenger || !message) {
     return res.status(400).json({ error: 'Все поля обязательны для заполнения' });
   }
 
@@ -55,6 +55,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           <tr style="background: #f9f9f9;">
             <td style="padding: 10px; font-weight: bold; color: #555;">Email:</td>
             <td style="padding: 10px; color: #1a1a1a;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; font-weight: bold; color: #555;">Телефон:</td>
+            <td style="padding: 10px; color: #1a1a1a;">${escapeHtml(phone)}</td>
+          </tr>
+          <tr style="background: #f9f9f9;">
+            <td style="padding: 10px; font-weight: bold; color: #555;">Мессенджер:</td>
+            <td style="padding: 10px; color: #1a1a1a;">${escapeHtml(messenger)}</td>
           </tr>
           <tr>
             <td style="padding: 10px; font-weight: bold; color: #555;">Сообщение:</td>
