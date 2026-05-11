@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Send, MessageCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 
 import ContactForm from '../components/ContactForm';
@@ -49,25 +49,48 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-display font-bold uppercase mb-2">{t.contactPage.labels.phone}</h4>
-                  <div className="space-y-1">
-                    <p className="text-white/40 text-lg">+7 926 123 33 28</p>
-                    <div className="flex gap-4">
-                      <a 
-                        href="https://wa.me/79261233328" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
-                      >
-                        WhatsApp
-                      </a>
-                      <a 
-                        href="https://t.me/+79261233328" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
-                      >
-                        Telegram
-                      </a>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-white/40 text-lg">+7 926 123 33 28</p>
+                      <div className="flex gap-4 mt-1">
+                        <a
+                          href="https://wa.me/79261233328"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
+                        >
+                          WhatsApp
+                        </a>
+                        <a
+                          href="https://t.me/+79261233328"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
+                        >
+                          Telegram
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-white/40 text-lg">+20 110 100 5061</p>
+                      <div className="flex gap-4 mt-1">
+                        <a
+                          href="https://wa.me/201101005061"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
+                        >
+                          WhatsApp
+                        </a>
+                        <a
+                          href="https://t.me/+201101005061"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-bold uppercase tracking-widest text-royal-pink hover:text-white transition-colors"
+                        >
+                          Telegram
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -84,11 +107,33 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-6">
-              {[Instagram, Facebook, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-royal-pink hover:text-royal-pink transition-all">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-royal-pink hover:text-royal-pink transition-all"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/+79261233328"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-royal-pink hover:text-royal-pink transition-all"
+              >
+                <Send className="w-5 h-5" />
+              </a>
+              <a
+                href="https://max.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Max"
+                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-royal-pink hover:text-royal-pink transition-all"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
             </div>
           </motion.div>
 
