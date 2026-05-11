@@ -81,7 +81,7 @@ const ContactForm = () => {
       <h3 className="text-3xl font-display font-bold uppercase mb-12">{t.contactPage.formTitle}</h3>
       <form className="space-y-8" onSubmit={handleSubmit}>
         <div className="space-y-2">
-          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.name}</label>
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.name} <span className="text-royal-pink">*</span></label>
           <input
             type="text"
             required
@@ -91,7 +91,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="space-y-2">
-          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.emailAddr}</label>
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.emailAddr} <span className="text-royal-pink">*</span></label>
           <input
             type="email"
             required
@@ -101,7 +101,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="space-y-2">
-          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.phoneNumber}</label>
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.phoneNumber} <span className="text-royal-pink">*</span></label>
           <input
             type="tel"
             required
@@ -112,7 +112,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="space-y-2">
-          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.messenger}</label>
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.messenger} <span className="text-royal-pink">*</span></label>
           <select
             required
             value={formData.messenger}
@@ -122,12 +122,13 @@ const ContactForm = () => {
             <option value="" disabled>{language === 'ru' ? 'Выберите мессенджер' : 'Select messenger'}</option>
             <option value="WhatsApp">WhatsApp</option>
             <option value="Telegram">Telegram</option>
+            <option value="Max">{language === 'ru' ? 'Макс' : 'Max'}</option>
             <option value="VK">VK</option>
             <option value="Email">{language === 'ru' ? 'Электронная почта' : 'Email'}</option>
           </select>
         </div>
         <div className="space-y-2">
-          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.message}</label>
+          <label className="text-xs uppercase tracking-widest text-white/40 font-bold">{t.contactPage.labels.message} <span className="text-royal-pink">*</span></label>
           <textarea
             rows={4}
             required
