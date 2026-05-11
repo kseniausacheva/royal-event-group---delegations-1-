@@ -328,7 +328,7 @@ export const translations = {
         message: 'Сообщение',
         submit: 'Отправить запрос'
       },
-      locations: 'Шарм-эль-Шейх, Египет \n Дубай, ОАЭ'
+      locations: '19090 Египет, Шарм-эль-Шейх, Генина Сити молл, офис 3090'
     },
     accessibleSection: {
       header: "ROYAL EVENT",
@@ -786,7 +786,7 @@ export const translations = {
         message: 'Message',
         submit: 'Submit Request'
       },
-      locations: 'Sharm El Sheikh, Egypt \n Dubai, UAE'
+      locations: '19090 Egypt, Sharm El Sheikh, Genena City Mall, office 3090'
     },
     accessibleSection: {
       header: "ROYAL EVENT",
