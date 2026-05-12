@@ -19,8 +19,12 @@ const ContactForm = () => {
     setStatus('sending');
     setErrorMsg('');
 
+    // On reg.ru hosting use contact.php; on Vercel use /api/contact
+    const isRu = typeof window !== 'undefined' && window.location.hostname.endsWith('.ru');
+    const endpoint = isRu ? '/contact.php' : '/api/contact';
+
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, mailingConsent }),
