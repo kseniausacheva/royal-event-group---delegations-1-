@@ -1,25 +1,33 @@
-import { useState, useEffect } from 'react';
-// Version: 1.0.2 - Language Routes
+import { useState, useEffect, lazy, Suspense } from 'react';
+// Version: 1.0.3 - Lazy loaded routes
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
 import Destination from './pages/Destination';
-import Delegations from './pages/Delegations';
-import CaseStudy from './pages/CaseStudy';
-import BlogPage from './pages/BlogPage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import MailingConsent from './pages/MailingConsent';
-import DataConsent from './pages/DataConsent';
-import Offer from './pages/Offer';
-import NotFound from './pages/NotFound';
 import CookieBanner from './components/CookieBanner';
 import Footer from './components/Footer';
 import { LanguageProvider, useLanguage } from './LanguageContext';
+
+// Lazy-loaded pages — split into separate chunks
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Delegations = lazy(() => import('./pages/Delegations'));
+const CaseStudy = lazy(() => import('./pages/CaseStudy'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const MailingConsent = lazy(() => import('./pages/MailingConsent'));
+const DataConsent = lazy(() => import('./pages/DataConsent'));
+const Offer = lazy(() => import('./pages/Offer'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+
+const PageLoader = () => (
+  <div className="min-h-screen bg-royal-black flex items-center justify-center">
+    <div className="w-12 h-12 border-2 border-royal-pink border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const Egypt = () => {
   const { t } = useLanguage();
@@ -170,6 +178,7 @@ const Navbar = () => {
 
 const AppRoutes = () => {
   return (
+    <Suspense fallback={<PageLoader />}>
     <Routes>
       {/* Redirect root to /ru */}
       <Route path="/" element={<Navigate to="/ru" replace />} />
@@ -215,6 +224,7 @@ const AppRoutes = () => {
       <Route path="/en/*" element={<NotFound />} />
       <Route path="*" element={<Navigate to="/ru" replace />} />
     </Routes>
+    </Suspense>
   );
 };
 
